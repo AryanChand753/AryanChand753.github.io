@@ -1,0 +1,210 @@
+body {
+    font: 18px "Nunito", sans-serif;
+    color: black;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    zoom: 89%;
+    position: inherit;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(0,0,0), rgb(0,0,69)) repeat-y center;
+    background-size: cover;
+}
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* TOP SECTION */
+.header {
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    padding-left: 2rem;
+}
+
+/*
+    NAVIVAGION BAR ---------------------------
+*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.5vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    color: white;
+}
+
+#logo {
+    font-size: 35px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color: red;
+    transition: .5s;
+}
+
+.subBtn {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: .01vw solid transparent;
+    font-weight: bold;
+    padding: 1vw 2.5vw;
+    border-radius: 3vw;
+    transition: transform .4s;
+}
+.subBtn:hover {
+    transform: scale(1.15);
+    background-color: darkred;
+}
+
+/*
+    CONTENT --------------------------------------
+*/
+
+.ecchi{
+    padding-left: 20vw;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10vh;
+}
+#welcome {
+    color: #16C0BD; /*#16C0BD*/
+    text-decoration: none;
+    font-size: 27px;
+}
+#name {
+    color: white;
+    text-decoration: none;
+    font-size: 69px;
+}
+.last {
+    color: #16C0BD;
+    text-decoration: none;
+    font-weight: bold;
+}
+.blinker{
+    color: #16C0BD;
+    text-decoration: none;
+    font-weight: bolder;
+    animation: animate 1s infinite;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#Iam {
+    color: #16C0BD;
+}
+#profile {
+    width: 400px;
+    margin-right: 20vw;
+}
+
+/*
+    BLUBBER ---------------------------------------
+*/
+:root {
+    --blue: rgb(61,90,254);
+    --light_blue: rgb(33,150,243);
+}
+
+.blubber {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    margin-top: 15vh;
+    padding: 2rem;
+
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.link {
+    border-top: 1px solid white;
+    margin-left: -5vw;
+    display: block;
+    padding: 3vw 7vw;
+    color: white;
+    font-size: clamp(2em, 8vw, 7em);
+    padding: clamp(0.25em, 1vw, 1em) clamp(1em, 4vw, 4em);
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    width: 120vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    align-content: flex-start;
+}
+.link:hover {
+    color:var(--light_blue);
+}
+.link:hover:before {
+    transition: width 690ms ease;
+    width: 100%;
+}
+.link:before {
+    background: linear-gradient(to right, transparent 65%, var(--blue), var(--light_blue));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+}
+
+
+/* 
+    FOOTER =====================================================================
+*/
+.footer {
+    background: transparent;
+    height: auto;
+    width: 100vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 40px;
+    color: white;
+    backdrop-filter: blur(69px);
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
