@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Aryan Chand</title>
+    <link rel="stylesheet" href="menuStyles.css">
+</head>
+<body>
+    <a class="link" href="https://youtu.be/oJYFRZ4cj2Q" target="_blank">How</a>
+    <a class="link" href="https://youtu.be/oJYFRZ4cj2Q" target="_blank">To</a>
+    <a class="link" href="https://youtu.be/oJYFRZ4cj2Q" target="_blank">Make</a>
+
+    <script>
+        for(const link of document.getElementsByClassName("link")) {
+            link.onmousemove = e => {
+                const decimal = e.clientX / link.offsetWidth;
+                
+                const basePercent = 80,
+                    percentRange = 20,
+                    adjustablePercent = percentRange * decimal;
+                
+                const lightBluePercent = basePercent + adjustablePercent;
+                
+                link.style.setProperty("--light-blue-percent", `${lightBluePercent}%`);
+            }
+        }
+    </script>
+</body>
+</html>
