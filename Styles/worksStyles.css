@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     padding: 2rem;
     
-    background-image: url(worksBackground.png);
+    background-image: url(Images/worksBackground.png);
     background-size: cover;
 }
 
