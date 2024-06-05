@@ -62,3 +62,27 @@ nav#nav-container {
     cursor: pointer;
   }
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+}
+.logo-wrapper {
+  margin: auto;
+  height: 240px;
+  width: 25%;
+/* 
+  border: 2px solid green;
+  & > img { border: 2px solid red;} */
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+.frl-wrapper { width: 20%; }
+img#aiaa-logo { margin-block: calc((235px - 128px) / 2); }
+img#frl-logo { 
+  margin-block: 12px;
+  margin-left: calc((100% - 216px) / 2);
+}
