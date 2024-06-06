@@ -92,7 +92,6 @@ img#frl-logo {
   background-color: #0021A5;
 }
 .hero-container {
-  border: red solid 2px;
   height: calc(100vh - 240px - 80px - 100px);
   display: flex;
   flex-direction: row;
@@ -126,3 +125,5 @@ img#frl-logo {
 #headshot {
   width: 50%;
 }
+
+.about
