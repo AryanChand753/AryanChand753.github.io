@@ -53,8 +53,67 @@
       </div>
     </div>
   </section>
-  <section class="about">
-    
+  <!-- <div class="scroller-arrow">
+    <a href="#about" class="arrow-wrapper" onclick="scrollToAbout(event)">
+      <span class="arrow" />
+    </a>
+  </div> -->
+  <section id="about">
+    <div class="about-student about-sect">
+      <div class="about-header">
+        <div class="about-heading">First, I'm a student.</div>
+        <div class="about-subheading">I'm a student of the <span id="uni">University of Florida</span> studying Computer Engineering with a concentration in aerospace applications.</div>
+      </div>
+      <div class="about-image-wrapper">
+        <div class="about-image-container"/>
+        <!-- <img src="./Images/uf-logo.png" alt="UF"> -->
+      </div>
+    </div>
+    <hr>
+    <div class="about-avionicsEngineer about-sect">
+      <div class="about-header">
+        <div class="about-heading">I'm an Avionics Engineer.</div>
+        <div class="about-subheading">As part of the <span id="FRL">Florida Rocket Lab</span> I develop software and hardware for our latest project: Sparrow.</div>
+      </div>
+      <div class="about-image-wrapper">
+        <div class="about-image-container"/>
+        <!-- <img src="./Images/frl-logo.png" alt="FRL"> -->
+      </div>
+    </div>
+    <hr>
+    <div class="about-webmaster about-sect">
+      <div class="about-header">
+        <div class="about-heading">I'm a Webmaster.</div>
+        <div class="about-subheading">As part of the UF chapter of the <span id="AIAA">American Institute of Aeronautics and Astronautics (AIAA)</span>, I maintain the website and digital interactions with our sponsors and associates.</div>
+      </div>
+      <div class="about-image-wrapper">
+        <div class="about-image-container"/>
+        <!-- <img src="./Images/aiaa-logo.png" alt="AIAA"> -->
+      </div>
+    </div>
+    <hr>
+    <div class="about-mentee about-sect">
+      <div class="about-header">
+        <div class="about-heading">I'm a Mentee.</div>
+        <div class="about-subheading">As part of <span id="LMCO">Lockheed Martin's</span></div>
+      </div>
+      <div class="about-image-wrapper">
+        <div class="about-image-container"/>
+        <!-- <img src="./Images/lmco-logo.png" alt="LMCO"> -->
+      </div>
+    </div>
   </section>
+  <div class="projects">
+
+  </div>
+
+  <script>
+    function scrollToAbout(event) {
+      event.preventDefault();
+      document.querySelector('#about').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>

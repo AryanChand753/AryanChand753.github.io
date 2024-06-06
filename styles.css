@@ -126,6 +126,88 @@ img#frl-logo {
   width: 50%;
 }
 
-.about {
-  
+/* .scroller-arrow {
+  width: 100vw;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.arrow-wrapper {
+  position: relative;
+  z-index: 100;
+  top: -5em;
+  margin-left: 0;
+  background: #111;
+  width: 10em;
+  height: 10em;
+  padding: 4em 2em;
+  border-radius: 50%;
+  font-size: .5em;
+  display: block;
+  box-shadow: 0px 0px 5px 0px #333;
+}
+.arrow {
+  float: left;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #fff transparent transparent transparent;
+  transform: rotate(360deg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -3.2em;
+    left: -3em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #111 transparent transparent transparent;
+    transform: rotate(360deg);
+  }
+} */
+
+#about {
+  height: 100vh;
+}
+.about-sect {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* height: 400px; */
+  justify-content: center;
+  margin: auto;
+}
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+
+
+
+.about-webmaster > .about-image-wrapper > .about-image-container {
+  background-image: url(./Images/aiaa-logo.png);
+}
+.about-avionicsEngineer > .about-image-wrapper > .about-image-container {
+  background-image: url(./Images/frl-logo.png);
+}
+.about-student > .about-image-wrapper > .about-image-container {
+  background-image: url(./Images/uf-logo.png);
+}
+.about-image-wrapper > .about-image-container {
+  background-position: center center;
+  background-size: contain;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
 }
