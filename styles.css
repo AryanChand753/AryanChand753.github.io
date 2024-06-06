@@ -86,3 +86,43 @@ img#frl-logo {
   margin-block: 12px;
   margin-left: calc((100% - 216px) / 2);
 }
+
+.hero {
+  /* background-color: rgb(15, 23, 42); */
+  background-color: #0021A5;
+}
+.hero-container {
+  border: red solid 2px;
+  height: calc(100vh - 240px - 80px - 100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15rem;
+}
+#hero-welcome {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: #FA4616;
+  font-size: 18px;
+}
+#hero-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 48px;
+}
+#hero-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, .7);
+  font-size: 38px;
+}
+#headshot {
+  width: 50%;
+}
