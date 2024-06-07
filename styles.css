@@ -173,14 +173,14 @@ img#frl-logo {
 
 #about {
   height: 100vh;
+  width: 80%;
+  margin: auto;
 }
 .about-sect {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  /* height: 400px; */
-  justify-content: center;
-  margin: auto;
+  display: block;
+  justify-content: right;
+  margin-inline: auto;
+  margin-block: 2rem;
 }
 .about-header {
   display: flex;
@@ -192,22 +192,33 @@ img#frl-logo {
   font-size: larger;
 }
 
-
-
 .about-webmaster > .about-image-wrapper > .about-image-container {
   background-image: url(./Images/aiaa-logo.png);
+  height: 100px;
 }
 .about-avionicsEngineer > .about-image-wrapper > .about-image-container {
   background-image: url(./Images/frl-logo.png);
+  height: 100px;
 }
 .about-student > .about-image-wrapper > .about-image-container {
   background-image: url(./Images/uf-logo.png);
+  height: 69px;
+}
+.about-mentee > .about-image-wrapper > .about-image-container {
+  background-image: url(./Images/lmco-logo.png);
+  height: 100px;
 }
 .about-image-wrapper > .about-image-container {
   background-position: center center;
   background-size: contain;
   background-clip: content-box;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
+}
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+.about-image-container {
+  width: 50rem;
 }
