@@ -193,9 +193,9 @@
             </ul>
             <div class="data">
               <div class="content">
-                <span class="type">Project</span>
-                <h1 class="project-title"><a href="#">Project Card</a></h1>
-                <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.""</p>
+                <span class="type">Self-study</span>
+                <h1 class="project-title"><a href="#">Learning C</a></h1>
+                <p class="text">"A repository displaying myself learning the C programming language"</p>
               </div>
             </div>
           </div>
@@ -204,9 +204,46 @@
     </div>      
   </section>
 
-  <section id="contact"></section>
+  <section id="contact-sect">
+    <div class="container contact-container">
+      <div class="contact-form">
+        <form id="contact" action="" method="post">
+          <h3>Quick Contact</h3>
+          <h4>Contact me today, and get reply within 48 hours.</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="image-wrapper">
+        <img src="./Images/iot.png" alt="puter">
+      </div>      
+    </div>
+  </section>
 
-  <footer></footer>
+  <footer>
+    <div class="container">
+      <span id="Connect">Connect with me!</span>
+      <div id="connect-links">
+        <div id="github" onclick="github()"><i class="fa-brands fa-github"></i> Github</div>
+        <div id="linkedin" onclick="linkedin()"><i class="fa-brands fa-linkedin"></i> LinkedIn</div>
+        <div id="email" onclick="window.location.href = 'mailto:aryanchand753@gmail.com'"><i class="fa-solid fa-envelope-open-text"></i> Email</div>
+      </div>
+      <p>Built from scratch only using <i class="fa-brands fa-html5"></i>HTML, <i class="fa-brands fa-css3-alt"></i>CSS and Vanilla <i class="fa-brands fa-square-js"></i>JavaScript. &COPY; Aryan Chand 2024.</p>
+    </div>
+  </footer>
 
   <script>
     function scrollToAbout(event) {
@@ -215,6 +252,9 @@
         behavior: 'smooth'
       });
     }
+
+    function github() { window.location.href = 'https://github.com/AryanChand753'; }
+    function linkedin() { window.location.href = 'https://www.linkedin.com/in/aryanchand753/'; }
   </script>
 </body>
 </html>
