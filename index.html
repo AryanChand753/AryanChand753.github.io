@@ -17,11 +17,298 @@
   </head>
   <body>
     <header>
-      <div class="container"></div>
+      <div class="container">
+        <button type="button" id="nav-home">Aryan Chand</button>
+        <nav>
+          <button type="button" class="nav-button" onclick="scrollToAbout()">About</button>
+          <script>
+            function scrollToAbout() {
+              document.getElementById("who").scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          </script>
+          <button type="button" class="nav-button" onclick="scrollToExperiences()">Experiences</button>
+          <script>
+            function scrollToExperiences() {
+              document.getElementById("experience").scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          </script>
+          <button type="button" class="nav-button" onclick="scrollToWorks()">Works</button>
+          <script>
+            function scrollToWorks() {
+              document.getElementById("works").scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          </script>
+          <button type="button" class="nav-button" onclick="scrollToProjects()">Projects</button>
+          <script>
+            function scrollToProjects() {
+              document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          </script>
+          <button type="button" class="nav-button" onclick="openCV()">Resume/CV</button>
+          <script>
+            function openCV() {
+              window.open("./docs/AryanChandResume2024.pdf", '_blank');
+            }
+          </script>
+        </nav>
+        <button type="button" id="nav-contact" onclick="openContactModal()">Contact Me</button>
+        <div id="contactModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:aryanchand753@gmail.com">aryanchand753@gmail.com</a></p>
+            <p>LinedIn: linedin.com/in/Aryanchand753</p>
+            <p>GitHub: github.com/AryanChand753</p>
+          </div>
+        </div>
+        <script>
+          var modal = document.getElementById("contactModal");
+          function openContactModal() { modal.style.display = "block"; }
+          function closeContactModal() { modal.style.display = "none"; }
+          window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+        </script>
+      </div>
     </header>
 
+    <section id="hero">
+      <div class="container">
+        <div class="profile-img">
+          <div id="content"></div>
+          <!-- <img src="./Images/profile.png" alt="Profile Image" /> -->
+        </div>
+
+        <div class="hero-title">
+          <h1>Designing & Developing</h1>
+          <h2><span>better</span> than ever</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Nostrum minima excepturi maxime iusto similique molestiae ducimus.</p>
+          <button type="button"><span>Contact Me</span></button>
+        </div>
+        <div class="logos">
+          <!-- <p>Logos</p> -->
+          <div class="logos-literal">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-git"></i>
+            <i class="fa-brands fa-linux"></i>
+          </div>
+          <div class="logo-imgs">
+            <img src="./Images/aiaa.png" alt="AIAA" style="filter:invert()">
+            <img src="./Images/lmco.png" alt="Lockheed Martin">
+            <img src="./Images/uf-logo.png" alt="University of Florida">
+            <img src="./Images/frl.png" alt="Florida Rocket Lab">
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <section id="who">
+      <div class="container">
+        <h1>Who is <span>Aryan Chand</span>?</h1>
+
+        <!-- ! CARDS -->
+        <div id="cards-container">
+          <div id="cards">
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="card-title">Student</div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perferendis.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-solid fa-shuttle-space"></i></div>
+                <div class="card-title">Avionics Engineer</div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, at.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-brands fa-react"></i></div>
+                <div class="card-title">Freelance Web Developer</div>
+                <div class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, delectus!</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-solid fa-computer"></i></div>
+                <div class="card-title">Webmaster</div>
+                <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, animi!</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-solid fa-jet-fighter"></i></div>
+                <div class="card-title">Mentee</div>
+                <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, animi!</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="card-img"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="card-title">Tutor</div>
+                <div class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, animi!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="experience">
+      <div class="container">
+        <div class="text-container">
+          <h1>Experiences</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam.</p>
+        </div>
+        <div class="experiences-container">
+          <div class="experience">
+            <div class="experience-text">
+              <h1 class="experience-header">Undergraduate Embedded Systems Designer</h1>
+              <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="experience-img">
+              <img src="./Images/frl-logo.png" alt="Florida Rocket Lab">
+            </div>
+          </div>
+          <hr>
+          <div class="experience">
+            <div class="experience-text">
+              <h1 class="experience-header">Undergraduate Embedded Systems Designer</h1>
+              <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="experience-img">
+              <img src="./Images/frl-logo.png" alt="Florida Rocket Lab">
+            </div>
+          </div>
+          <hr>
+          <div class="experience">
+            <div class="experience-text">
+              <h1 class="experience-header">Undergraduate Embedded Systems Designer</h1>
+              <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="experience-img">
+              <img src="./Images/frl-logo.png" alt="Florida Rocket Lab">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <div class="works-container">
+          <h1>Select Works</h1>
+          <div class="work">
+            <div class="works-text-container">
+              <h1>Drone</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, soluta!</p>
+              <div class="tags">
+                <button>Arduino</button>
+                <button>CAD</button>
+              </div>
+            </div>
+            <div class="works-img-container">
+              <img src="./Images/iot.png" alt="IoT">
+            </div>
+          </div>
+          <div class="work">
+            <div class="works-text-container">
+              <h1>Drone</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, soluta!</p>
+              <div class="tags">
+                <button>Arduino</button>
+                <button>CAD</button>
+              </div>
+            </div>
+            <div class="works-img-container">
+              <img src="./Images/iot.png" alt="IoT">
+            </div>
+          </div>
+          <div class="work">
+            <div class="works-text-container">
+              <h1>Drone</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, soluta!</p>
+              <div class="tags">
+                <button>Arduino</button>
+                <button>CAD</button>
+              </div>
+            </div>
+            <div class="works-img-container">
+              <img src="./Images/iot.png" alt="IoT">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="project-header">
+          <h1>Projects of Interest</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div class="projects-container">
+          <div class="project">
+            <div class="project-text">
+              <h1 class="project-header">Terminal Jarvis</h1>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="project-img">
+              <img src="./Images/walle.png" alt="Terminal Jarvis">
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h1 class="project-header">Zephyr QEMU</h1>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="project-img">
+              <img src="./Images/webdev.png" alt="Zephyr QEMU">
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h1 class="project-header">MAO Management</h1>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="project-img">
+              <img src="./Images/background.png" alt="MAO Management">
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-text">
+              <h1 class="project-header">Calcumulator</h1>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+            <div class="project-img">
+              <img src="./Images/iot.png" alt="Calcumulator">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <div class="container"></div>
+      <div class="footer-container">
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2024 Aryan Chand. All rights reserved.</p>
+            <div class="social-media">
+              <button type="button"><i class="fa-brands fa-github"></i></button>
+              <button type="button"><i class="fa-brands fa-linkedin"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script></script>
