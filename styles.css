@@ -258,7 +258,6 @@ header .container #nav-contact {
 #cards-container .card {
   background-color: rgba(255, 255, 255, .02);
   border-radius: 10px;
-  cursor: pointer;
   display: flex;
   height: 260px;
   flex-direction: column;
@@ -347,14 +346,27 @@ header .container #nav-contact {
 }
 
 #experience .container .experiences-container .experience .experience-description {
-  display: flex;
-  flex-direction: column;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  text-wrap: wrap;
+  width: 400px;
+  margin-top: 40px;
+  height: 100%;
   gap: 10px;
+  & > a {
+    font-family: var(--font-family);
+    color: #8fe566;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
 }
 
 #experience .experience-img {
   height: 30rem;
   width: 30rem;
+  margin-left: auto;
 }
 
 #experience .experience-img img {
@@ -507,6 +519,7 @@ header .container #nav-contact {
   font-family: var(--font-family);
   font-size: 2rem;
   font-weight: 700;
+  display: inline;
 }
 
 #projects .container .projects-container .project .project-text p {
@@ -514,6 +527,10 @@ header .container #nav-contact {
   font-size: 1.5rem;
   font-weight: 500;
   margin: auto;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #projects .container .projects-container .project .project-img {
@@ -525,6 +542,7 @@ header .container #nav-contact {
     max-height: 600px;
     width: 100%;
     object-fit: cover;
+    border-radius: 7px;
   }
 }
 
