@@ -4,4 +4,3 @@ Personal Website
 
 ## Todo:
 - Get white/transparent images for logos
-- 
