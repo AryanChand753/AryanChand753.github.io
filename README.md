@@ -1,7 +1,3 @@
-# AryanChand753.github.io
-Personal Website
+# My Personal Website
 
-
-## Todo:
-
-- Get white/transparent images for logos
+[The Page](https://www.aryanchand753.github.io)
